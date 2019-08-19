@@ -1,0 +1,62 @@
+$roboto-font-path: '~roboto-fontface/fonts';
+
+$font-family-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+
+$smooth-white: #e5e5e5;
+$dark-purple: #080325 !default;
+$rich-black: #04020f !default;
+$pink: #f397d6 !default;
+$purple: #b8b8f3 !default;
+$blue: #acedff !default;
+$soap: #d7b8f3 !default;
+$mustard: #ffc857 !default;
+$red: #fe5d26 !default;
+$green: #61e786 !default;
+$razz: #f42272 !default;
+$cornflower: #92dce5 !default;
+
+$white: $smooth-white !default;
+$black: $rich-black !default;
+
+$primary: $blue !default;
+$secondary: $pink !default;
+$success: $green !default;
+$info: $cornflower !default;
+$warning: $mustard !default;
+$danger: $razz !default;
+$light: $cornflower !default;
+$dark: $black !default;
+
+$foreground-color: $white;
+$background-color: $black;
+$background-gradient: linear-gradient($dark-purple, $rich-black);
+$border-color: rgba(255, 255, 255, 0.1) !default;
+
+$logo-symbol: $razz;
+$logo-alt-symbol: $purple;
+$logo-symbol-fill: transparent;
+$logo-text: $white;
+
+$story-point-color: (
+  0: $pink,
+  1: $purple,
+  2: $blue,
+  3: $soap,
+  4: $mustard,
+  5: $red,
+  6: $green,
+  7: $razz
+);
+
+$story-point-forecolor: (
+  0: $black,
+  1: $black,
+  2: $black,
+  3: $black,
+  4: $black,
+  5: $black,
+  6: $black,
+  7: $black
+);

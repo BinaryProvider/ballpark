@@ -1,0 +1,40 @@
+.estimate-story {
+  input {
+    border-style: none;
+    background: rgba($black, 0.25);
+    color: $secondary;
+    border: solid 0.1rem rgba($secondary, 0.1);
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    box-shadow: none !important;
+
+    &:focus {
+      border-color: rgba($secondary, 0.15) !important;
+    }
+
+    &:focus,
+    &:hover {
+      background: rgba($black, 0.2);
+      border-color: rgba($secondary, 0.15);
+      color: $secondary;
+    }
+  }
+
+  button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 2rem;
+    line-height: 1rem;
+  }
+
+  ::placeholder {
+    color: rgba($secondary, 0.5);
+  }
+
+  .spinner-border {
+    vertical-align: middle;
+  }
+}

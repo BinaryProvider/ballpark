@@ -1,0 +1,150 @@
+@import 'theme/theme';
+@import '~bootstrap/scss/bootstrap';
+
+html {
+  background: $background-color;
+}
+
+body {
+  background: $background-color $background-gradient;
+  background-repeat: no-repeat;
+  color: $foreground-color;
+  font-family: $font-family-sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+a,
+.btn-link {
+  transition: 0.5s;
+
+  &:hover {
+    text-decoration: none;
+    color: $mustard;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+button {
+  transition: 0.1s;
+
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-style: outset;
+  }
+}
+
+.page {
+  max-width: 60rem;
+
+  .slug {
+    h5 {
+      font-weight: 300;
+      line-height: 150%;
+      color: rgba($white, 0.6);
+    }
+  }
+}
+
+.panel {
+  $panel-padding-x: 4;
+  $panel-padding-y: 3;
+
+  background-color: rgba($secondary, 0.1);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgba($black, 0.8);
+
+  .header {
+    background-color: rgba($black, 0.2);
+    padding: map-get($spacers, $panel-padding-y)
+      map-get($spacers, $panel-padding-x);
+    font-weight: 800;
+    font-size: 1.6rem;
+  }
+
+  .body {
+    padding: map-get($spacers, $panel-padding-x);
+
+    .form-group {
+      margin: 0;
+    }
+  }
+
+  .footer {
+    padding: 0 map-get($spacers, $panel-padding-x);
+    padding-bottom: map-get($spacers, $panel-padding-x);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .invalid-feedback {
+    font-size: 100%;
+    align-items: center;
+
+    i {
+      font-size: 150%;
+    }
+  }
+
+  &.panel-sm {
+    $factor: 0.7;
+    border-radius: 0;
+
+    .header {
+      padding: map-get($spacers, $panel-padding-y) * $factor
+        map-get($spacers, $panel-padding-x) * $factor;
+      font-weight: normal;
+      font-size: 1rem;
+    }
+
+    .body {
+      padding: map-get($spacers, $panel-padding-x) * $factor;
+    }
+  }
+}
+
+.flex-auto {
+  flex-basis: auto !important;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.opaque {
+  opacity: 1;
+}
+
+.tooltip {
+  min-width: 8rem;
+}
+
+.spinner-large {
+  width: 6rem;
+  height: 6rem;
+  border-width: 0.5rem;
+}
+
+@include media-breakpoint-down(sm) {
+  html {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+}

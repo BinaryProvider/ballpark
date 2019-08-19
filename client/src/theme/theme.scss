@@ -1,0 +1,34 @@
+@import 'variables';
+@import '~roboto-fontface/css/roboto-slab/sass/roboto-slab-fontface.scss';
+@import '~inter-ui/inter.scss';
+@import '../../node_modules/ionicons/dist/scss/ionicons.scss';
+
+#Logo {
+  .symbol {
+    fill: $logo-symbol;
+  }
+
+  .alt-symbol {
+    fill: $logo-alt-symbol;
+  }
+
+  .symbol-fill {
+    fill: $logo-symbol-fill;
+  }
+
+  .text {
+    fill: $logo-text;
+  }
+}
+
+@for $i from 0 through 7 {
+  .bg-story-point-#{$i} {
+    background-color: map-get($story-point-color, $i);
+  }
+}
+
+@for $i from 0 through 7 {
+  .text-story-point-#{$i} {
+    color: map-get($story-point-forecolor, $i);
+  }
+}

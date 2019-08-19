@@ -1,0 +1,65 @@
+{
+  "name": "ballpark-client",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject",
+    "codegen": "graphql-codegen --config codegen.yml"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.2",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.8.5",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/victory": "^31.0.21",
+    "apollo-boost": "^0.4.4",
+    "apollo-link-ws": "^1.0.18",
+    "bootstrap": "^4.3.1",
+    "graphql": "^14.4.2",
+    "graphql-tag": "^2.10.1",
+    "inter-ui": "^3.9.0",
+    "ionicons": "^4.6.2",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-apollo": "^3.0.1",
+    "react-apollo-hooks": "^0.5.0",
+    "react-bootstrap": "^1.0.0-beta.11",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "roboto-fontface": "^0.10.0",
+    "sass-resources-loader": "^2.0.1",
+    "subscriptions-transport-ws": "^0.9.16",
+    "typescript": "3.5.3",
+    "victory": "^32.3.6"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.6.1",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
+    "react-app-rewired": "^2.1.3",
+    "@graphql-codegen/typescript": "1.6.1",
+    "@graphql-codegen/typescript-operations": "1.6.1",
+    "@graphql-codegen/typescript-react-apollo": "1.6.1"
+  }
+}

@@ -1,0 +1,53 @@
+.register {
+  input {
+    padding: 2rem;
+    border-style: none;
+    background: transparent;
+    outline: none;
+    color: $primary;
+  }
+
+  button {
+    padding: 0;
+    font-size: 2rem;
+    color: $blue;
+
+    &:hover {
+      color: $mustard !important;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .register-form {
+    :global .form-group {
+      background: rgba($primary, 0.1);
+      border-radius: 0.3rem;
+      transition: 0.5s;
+      box-shadow: none;
+
+      &:hover,
+      &:active {
+        background: rgba($primary, 0.14);
+      }
+
+      ::placeholder {
+        color: rgba($primary, 0.5);
+      }
+
+      &.is-valid {
+        box-shadow: 0 0 0 0.2rem rgba($success, 0.25);
+      }
+
+      &.is-invalid {
+        box-shadow: 0 0 0 0.2rem rgba($danger, 0.25);
+      }
+    }
+
+    .form-control {
+      box-shadow: none !important;
+    }
+  }
+}

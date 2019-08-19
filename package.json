@@ -1,0 +1,12 @@
+{
+  "name": "ballpark",
+  "version": "0.0.1",
+  "description": "Ballpark - A collaborative planning app",
+  "private": true,
+  "scripts": {
+    "start": "docker-compose build && docker-compose up"
+  },
+  "keywords": [],
+  "author": "John Hellbom",
+  "license": "ISC"
+}

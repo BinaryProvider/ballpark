@@ -1,0 +1,27 @@
+.card {
+  background-color: transparent;
+  border: solid 0.0625rem rgba($primary, 0.1);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  flex: 0 1 0;
+  min-width: 6rem;
+  min-height: 6rem;
+  cursor: pointer;
+  transition: 0s;
+}
+
+$hover-opacity: 0.8;
+
+@for $i from 0 through 7 {
+  .storypoint-#{$i} {
+    &.active {
+      color: $black;
+      background-color: rgba(map-get($story-point-color, $i), 1);
+    }
+    &:hover {
+      color: $black;
+      background-color: rgba(map-get($story-point-color, $i), $hover-opacity);
+    }
+  }
+}

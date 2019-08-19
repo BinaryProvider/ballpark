@@ -1,0 +1,25 @@
+.code {
+  background: rgba($black, 0.5);
+  font-family: 'Roboto-Slab', serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  padding: 0.3rem;
+  color: $mustard;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba($black, 0.4);
+  }
+}
+
+.num-box {
+  background: rgba($black, 0.5);
+  padding: 0.2rem 1rem;
+  // min-width: 5rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-weight: bold;
+  transition: 1s;
+}

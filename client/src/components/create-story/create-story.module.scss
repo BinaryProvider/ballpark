@@ -1,0 +1,19 @@
+.create-story {
+  textarea {
+    background: rgba($black, 0.25);
+    color: $primary;
+    border: solid 0.1rem rgba($primary, 0.1);
+    font-size: 1.6rem;
+
+    &:focus,
+    &:hover {
+      background: rgba($black, 0.2);
+      border-color: rgba($primary, 0.15);
+      color: $primary;
+    }
+  }
+
+  ::placeholder {
+    color: rgba($primary, 0.5);
+  }
+}
