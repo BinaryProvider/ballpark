@@ -4,6 +4,8 @@
 
 With Ballpark, you and your colleagues can create user stories and play planning poker on them in real-time.
 
+![Screenshots](ballpark-screenshots.gif)
+
 ## Stack
 
 The front-end is a React application and the back-end consists of a GraphQL API and a MongoDB database.
